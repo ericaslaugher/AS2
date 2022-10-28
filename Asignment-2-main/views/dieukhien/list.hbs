@@ -1,0 +1,19 @@
+<div class="container text-center">
+   <div class="card-group">
+      <div class="row">
+         {{#each dieukhien}}
+         <div class="card col-md-2 m-2">
+            <a href="/dieukhien/detail/{{_id}}">
+               <img class="card-img-top mt-4" src="{{image}}" width="200" height="200">
+            </a>
+            <div class="card-body">
+               <h4 class="card-title text-success">{{name}}</h4>
+               <p class="card-text text-danger">{{price}}</p>
+
+               <p class="card-text">{{status}}</p>
+            </div>
+         </div>
+         {{/each}}
+      </div>
+   </div>
+</div>
