@@ -5,8 +5,8 @@ var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 
 var indexRouter = require('./routes/index')
-//var productRouter = require('./routes/product')
-//var figureRouter = require('./routes/figure')
+var productRouter = require('./routes/product')
+var figureRouter = require('./routes/figure')
 var apiRouter = require('./routes/api')
 var Product = mongoose.model('Product');
 var Figure = mongoose.model('Figure');
