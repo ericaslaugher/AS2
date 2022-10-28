@@ -14,7 +14,7 @@ router.get('/drop', (req, res) => {
 
 
 router.get('/', (req, res) => {
-    productModel.find((err, data) => {
+    ProductModel.find((err, data) => {
         if (!err) {
            
             res.render('product/index', { product: data })
