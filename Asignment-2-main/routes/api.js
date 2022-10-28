@@ -1,5 +1,5 @@
 const express = require('express')
-const StudentModel = require('../models/XephinhModel')
+const StudentModel = require('../models/ProductModel')
 const router = express.Router()
 
 //view all: select * from student
@@ -25,7 +25,7 @@ router.delete('/:id', (req, res) => {
    StudentModel.findByIdAndDelete(req.params.id, (err) => {
       if (!err) {
          //res.send("Delete student succeed !")
-         res.json({ "message": "delete student succceed" })
+         res.json({ "message": "delete student succeed" })
       }
    })
 })

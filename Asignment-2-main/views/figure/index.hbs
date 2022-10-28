@@ -1,9 +1,9 @@
 <table class="table table-bordered table-success p-4 mt-3 mb-3 text-center">
    <tr>
-      <th class="text-primary" colspan="5">Puzzle toys list</th>
+      <th class="text-primary" colspan="5">Control toys list</th>
       <th>
-         <a class="btn btn-primary" href="/xephinh/add">ADD</a>
-         <a class="btn btn-success" href="/xephinh/drop"
+         <a class="btn btn-primary" href="/figure/add">ADD</a>
+         <a class="btn btn-success" href="/figure/drop"
             onclick="return confirm('Are you sure to drop all items ?');">DROP</a>
       </th>
    </tr>
@@ -20,25 +20,25 @@
       <th colspan="6">
          <select class="form-control" onchange="window.location.href=this.value">
             <option value="">Sort by name</option>
-            <option value="/xephinh/sort/asc">Ascending</option>
-            <option value="/xephinh/sort/desc">Descending</option>
+            <option value="/figure/sort/asc">Ascending</option>
+            <option value="/figure/sort/desc">Descending</option>
          </select>
       </th>
       <th colspan="1">
-         <form action="/xephinh/search" method="post">
+         <form action="/figure/search" method="post">
             <div class="form-group">
                <input class="form-control" type="search" name="name" placeholder="Search by name">
             </div>
          </form>
       </th>
    </tr>
-   {{#each xephinh }}
+   {{#each figure }}
    <tr>
       <td>{{name}}</td>
       <td>{{origin}}</td>
       <td>{{material}}</td>
       <td>
-         <a href="/xephinh/detail/{{_id}}">
+         <a href="/figure/detail/{{_id}}">
             <img src="{{image}}" width="100" height="100">
          </a>
       </td>
@@ -46,8 +46,8 @@
       <td>{{status}}</td>
 
       <td>
-         <a class="btn btn-warning" href="/xephinh/edit/{{_id}}">EDIT</a>
-         <a class="btn btn-danger" href="/xephinh/delete/{{_id}}">DELETE</a>
+         <a class="btn btn-warning" href="/figure/edit/{{_id}}">EDIT</a>
+         <a class="btn btn-danger" href="/figure/delete/{{_id}}">DELETE</a>
       </td>
    </tr>
    {{/each}}

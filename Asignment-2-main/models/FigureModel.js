@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-var XephinhSchema = new mongoose.Schema({
+var FigureSchema = new mongoose.Schema({
     name: String,
     status: String,
     origin: String,
@@ -10,5 +10,5 @@ var XephinhSchema = new mongoose.Schema({
 
 })
 
-var XephinhModel = mongoose.model('xep hinh', XephinhSchema, 'xephinh')
-module.exports = XephinhModel
+var FigureModel = mongoose.model('figure', FigureSchema, 'figure')
+module.exports = FigureModel

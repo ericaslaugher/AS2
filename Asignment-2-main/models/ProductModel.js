@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-var DieukhienSchema = new mongoose.Schema({
+var ProductSchema = new mongoose.Schema({
     name: String,
     status: String,
     origin: String,
@@ -10,5 +10,5 @@ var DieukhienSchema = new mongoose.Schema({
 
 })
 
-var DieukhienModel = mongoose.model('dieu khien', DieukhienSchema, 'dieukhien')
-module.exports = DieukhienModel
+var ProductModel = mongoose.model('product', ProductSchema, 'product')
+module.exports = ProductModel
