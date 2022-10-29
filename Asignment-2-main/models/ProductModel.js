@@ -7,7 +7,8 @@ var ProductSchema = new mongoose.Schema({
     image: String,
     price: Number,
     material: String,
-    bestseller: String
+    bestseller: Boolean
+    
     
 
 })
