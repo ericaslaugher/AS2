@@ -35,7 +35,20 @@
          <input class="form-control" type="status" name="status" value="{{product.status}}" required min=0 max=10>
       </div>
 
-
+ <div class="form-group mt-3">
+         <label class="text-success h6">Student Gender</label>
+         <br>
+         BestSeller <input type="radio" name="bestseller" value="bestseller">
+         UnBestseller <input type="radio" name="un bestseller" value="un bestseller">
+         {{#equal student.gender "Male"}}
+         BestSeller <input type="radio" name="bestseller" value="bestseller" checked>
+         UnBestseller <input type="radio" name="un bestseller" value="un bestseller">
+         {{/equal}}
+         {{#equal student.gender "Female"}}
+         BestSeller <input type="radio" name="bestseller" value="bestseller">
+         UnBestseller<input type="radio" name="un bestseller" value="un bestseller" checked>
+         {{/equal}}
+      </div>
        
       <div class="form-group mt-3">
          <input class="btn btn-danger mt-3" type="submit" value="Edit">
