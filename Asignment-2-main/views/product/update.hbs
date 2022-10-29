@@ -37,5 +37,15 @@
       <div class="form-group mt-3">
          <input class="btn btn-danger mt-3" type="submit" value="Edit">
       </div>
-   </form>
+
+
+   </form><div class="form-group mt-3">
+         <label class="text-success h6">BestSeller</label>
+         {{#equal product.bestseller true}}
+         <input type="checkbox" value="true" checked>
+         {{/equal}}
+         {{#equal product.bestseller false}}
+         <input type="checkbox" value="false">
+         {{/equal}}
+      </div>
 </div>
