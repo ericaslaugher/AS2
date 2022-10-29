@@ -35,16 +35,7 @@
          <input class="form-control" type="status" name="status" value="{{product.status}}" required min=0 max=10>
       </div>
 
-       </form><div class="form-group mt-3">
-         <label class="text-success h6">BestSeller</label>
-         {{#equal product.bestseller true}}
-         <input type="checkbox" value="true" checked>
-         {{/equal}}
-         {{#equal product.bestseller false}}
-         <input type="checkbox" value="false" checked>
-         {{/equal}}
-      </div>  
-
+       
       <div class="form-group mt-3">
          <input class="btn btn-danger mt-3" type="submit" value="Edit">
       </div>
