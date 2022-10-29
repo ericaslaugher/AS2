@@ -8,12 +8,7 @@ var ProductSchema = new mongoose.Schema({
     image: String,
     price: Number,
     material: String,
-    bestseller: Boolean,
-    unbestseller:Boolean
-    
-    
-    
-
+    bestseller: String,
 })
 
 var ProductModel = mongoose.model('product', ProductSchema, 'product')
