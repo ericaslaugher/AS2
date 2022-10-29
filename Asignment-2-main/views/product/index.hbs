@@ -45,14 +45,7 @@
       </td>
       <td>{{price}}</td>
       <td>{{status}}</td>
-{{#each .}}
-            <tr>
-                <td class="checkbox-event" selenium-id="check">{{input type="checkbox" checked=prod.selected id=prod.id}}</td>
-                <td selenium-id="id">{{prod.productNumber}}</td>
-                <td selenium-id="name">{{prod.name}}</td>
-              
-            </tr>
-{{/each}}
+       
 
       <td>
          <a class="btn btn-warning" href="/product/edit/{{_id}}">EDIT</a>
