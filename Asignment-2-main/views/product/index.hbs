@@ -15,6 +15,7 @@
       <th>Price</th>
       <th>Status</th>
       <th>Menu</th>
+      
    </tr>
    <tr>
       <th colspan="6">
@@ -44,7 +45,9 @@
       </td>
       <td>{{price}}</td>
       <td>{{status}}</td>
-
+<label><input type="radio" name="mode" value="auto" {{{setChecked auto mode}}}>Auto</label><br>
+<label><input type="radio" name="mode" value="on" {{{setChecked on mode}}}>On</label><br>
+<label><input type="radio" name="mode" value="off" {{{setChecked off mode}}}>Off</label><br>
       <td>
          <a class="btn btn-warning" href="/product/edit/{{_id}}">EDIT</a>
          <a class="btn btn-danger" href="/product/delete/{{_id}}">DELETE</a>
