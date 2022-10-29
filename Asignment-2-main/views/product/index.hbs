@@ -45,9 +45,24 @@
       </td>
       <td>{{price}}</td>
       <td>{{status}}</td>
-<label><input type="radio" name="mode" value="auto" {{{setChecked auto mode}}}>Auto</label><br>
-<label><input type="radio" name="mode" value="on" {{{setChecked on mode}}}>On</label><br>
-<label><input type="radio" name="mode" value="off" {{{setChecked off mode}}}>Off</label><br>
+<h1>{{title}}</h1>
+<form class="pure-form">
+    <h2>Channel A Setup</h2>           
+    <label for="option-A1">
+         <input id="option-A1" type="radio" name="optionsRadiosA" value="Video" {{checked optionsRadiosA 'Video'}}> Video
+    </label>
+    <label for="option-A2">
+        <input id="option-A2" type="radio" name="optionsRadiosA" value="Audio" {{checked optionsRadiosA 'Audio'}}> Audio
+    </label>
+    <h2>Channel B Setup</h2>
+    <label for="option-B1">
+        <input id="option-B1" type="radio" name="optionsRadiosB" value="Video" {{checked optionsRadiosB 'Video'}}> Video
+    </label>
+    <label for="option-B2">
+         <input id="option-B2" type="radio" name="optionsRadiosB" value="Audio" {{checked optionsRadiosB 'Audio'}}> Audio
+    </label>
+    <input type="submit" value="Update the Channel Feeds">
+</form>
       <td>
          <a class="btn btn-warning" href="/product/edit/{{_id}}">EDIT</a>
          <a class="btn btn-danger" href="/product/delete/{{_id}}">DELETE</a>
