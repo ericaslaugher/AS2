@@ -45,9 +45,9 @@
       </td>
       <td>{{price}}</td>
       <td>{{status}}</td>
-{{#each prod in allProducts}}
+{{#each .}}
             <tr>
-                <td class="checkbox-event" selenium-id="check">{{input type=checkbox checked=prod.selected id=prod.id}}</td>
+                <td class="checkbox-event" selenium-id="check">{{input type="checkbox" checked=prod.selected id=prod.id}}</td>
                 <td selenium-id="id">{{prod.productNumber}}</td>
                 <td selenium-id="name">{{prod.name}}</td>
               
